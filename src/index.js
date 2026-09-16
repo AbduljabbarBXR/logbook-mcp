@@ -5,7 +5,8 @@ import { z } from "zod";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 
-const server = new McpServer({ name: "logbook-mcp", version: "0.1.0" });
+const pkg = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+const server = new McpServer({ name: pkg.name, version: pkg.version });
 
 function storePath(root) {
   const dir = join(resolve(root || "."), ".logbook");
