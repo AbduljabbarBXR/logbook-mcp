@@ -1,6 +1,6 @@
 {
   "name": "logbook-mcp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Project memory across sessions for AI agents. A queryable decision log that survives between sessions, so agents remember what was decided and why.",
   "type": "module",
   "main": "src/index.js",
@@ -23,5 +23,5 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0"
   },
-  "mcpName": "io.github.abduljabbarbxr/logbook-mcp"
+  "mcpName": "io.github.AbduljabbarBXR/logbook-mcp"
 }
