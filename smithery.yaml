@@ -1,0 +1,12 @@
+name: logbook-mcp
+description: Project memory across sessions for AI agents. A queryable decision log that survives between sessions, so agents remember what was decided and why.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'logbook-mcp']
+    })
